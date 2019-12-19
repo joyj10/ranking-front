@@ -1,30 +1,20 @@
 <template>
   <div id="app">
+    <router-link to="/home">home</router-link>
     <navibar></navibar>
-    <MainHeader></MainHeader>
-    <banner-text></banner-text>
-    <itme-list></itme-list>
-    <main-text></main-text>
+    <router-view></router-view>
     <MainFooter></MainFooter>
   </div>
 </template>
 
 <script>
 import Navibar from "./components/Navibar";
-import MainHeader from "./components/MainHeader";
-import BannerText from "./components/BannerText";
 import MainFooter from "./components/Footer";
-import ItmeList from "./components/itmeList";
-import MainText from "./components/MainText";
 
 export default {
   name: 'app',
   components: {
-    MainText,
-    ItmeList,
     MainFooter,
-    BannerText,
-    MainHeader,
     Navibar,
   }
 }
@@ -38,6 +28,6 @@ export default {
   /*-moz-osx-font-smoothing: grayscale;*/
   /*text-align: center;*/
   /*color: #2c3e50;*/
-  /*margin-top: 60px;*/
+  margin-top: 60px;
 }
 </style>

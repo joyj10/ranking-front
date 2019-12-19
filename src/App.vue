@@ -1,16 +1,31 @@
 <template>
   <div id="app">
-    <all></all>
+    <navibar></navibar>
+    <MainHeader></MainHeader>
+    <banner-text></banner-text>
+    <itme-list></itme-list>
+    <main-text></main-text>
+    <MainFooter></MainFooter>
   </div>
 </template>
 
 <script>
-import All from './components/All.vue'
+import Navibar from "./components/Navibar";
+import MainHeader from "./components/MainHeader";
+import BannerText from "./components/BannerText";
+import MainFooter from "./components/Footer";
+import ItmeList from "./components/itmeList";
+import MainText from "./components/MainText";
 
 export default {
   name: 'app',
   components: {
-    All
+    MainText,
+    ItmeList,
+    MainFooter,
+    BannerText,
+    MainHeader,
+    Navibar,
   }
 }
 </script>

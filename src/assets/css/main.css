@@ -128,6 +128,9 @@
 		}
 
 	a {
+		text-decoration: none;
+	}
+	.a-dot {
 		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
@@ -136,7 +139,7 @@
 		border-bottom: dotted 1px;
 	}
 
-		a:hover {
+		.a-dot:hover {
 			border-bottom-color: transparent;
 		}
 
@@ -278,7 +281,7 @@
 	}
 
 		a:hover {
-			color: #EF6480 !important;
+			color: #FFBF00 !important;
 		}
 
 	strong, b {
